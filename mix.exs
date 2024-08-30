@@ -8,7 +8,7 @@ defmodule EctoStreamFactory.MixProject do
     [
       app: :ecto_stream_factory,
       version: @version,
-      elixir: ">= 1.10.0",
+      elixir: ">= 1.17.2",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -34,8 +34,8 @@ defmodule EctoStreamFactory.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:stream_data, "~> 0.5"},
-      {:ecto_sql, "~> 3.0", optional: true},
+      {:stream_data, "~> 1.1.1"},
+      {:ecto_sql, "~> 3.12", optional: true},
       {:postgrex, ">= 0.0.0", only: :test},
       {:ex_doc, "~> 0.28", only: :dev, runtime: false},
       {:dialyxir, "~> 1.0", only: :dev, runtime: false}

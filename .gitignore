@@ -23,3 +23,8 @@ erl_crash.dump
 ecto_stream_factory-*.tar
 
 .DS_Store
+
+.hex
+.mix
+.direnv
+.lexical
